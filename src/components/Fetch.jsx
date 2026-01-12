@@ -12,7 +12,7 @@ function Fetch() {
   const fileInputRef = useRef(null);
 
   const fetchProducts = () => {
-    axios.get("/api/fetch")
+    axios.get("/api/fetch.js")
       .then((response) => {
         if (Array.isArray(response.data)) {
           setProducts(response.data);
