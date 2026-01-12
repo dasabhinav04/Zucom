@@ -1,0 +1,86 @@
+/* NAVBAR BACKGROUND */
+.main-nav {
+  background: #0c2545;
+}
+
+/* DESKTOP LINKS */
+.main-nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav .nav-links a:hover,
+.main-nav .nav-links .active {
+  color: #e0c12b;
+}
+
+/* SEARCH */
+.search-bar {
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  border: none;
+  padding: 6px 8px;
+  outline: none;
+}
+
+.search-bar button {
+  background: #e0c12b;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU SLIDEOUT */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: #0c2545;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+.mobile-menu.open {
+  right: 0;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  float: right;
+}
+
+/* MOBILE LINKS */
+.mobile-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-links li {
+  margin: 18px 0;
+}
+
+.mobile-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  display: block;
+}
+
+.mobile-links a.active,
+.mobile-links a:hover {
+  color: #e0c12b;
+}
+

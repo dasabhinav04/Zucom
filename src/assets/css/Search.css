@@ -1,0 +1,66 @@
+.search-wrapper {
+  width: 250px;
+}
+
+.search-bar input {
+  background-color: #0c2545;
+  border: 1px solid #264a7d;
+  color: white;
+  padding: 6px 8px;
+}
+
+.search-bar input:focus {
+  border-color: #e0c12b;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(224,193,43,0.25);
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background: #102c59;
+  border: 1px solid #264a7d;
+  border-radius: 6px;
+  overflow-y: auto;
+  max-height: 250px;
+  z-index: 999;
+  padding: 6px 0;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background: #0c2545;
+}
+
+/* Each result item as flex row */
+.result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  gap: 12px; /* space between text & image */
+}
+
+/* Text block takes remaining width */
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* space between name and price */
+}
+
+/* Image styling */
+.item-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-left: 8px;
+}

@@ -1,0 +1,80 @@
+/* AddProducts.css */
+
+/* Container padding */
+.container.my-4 {
+  max-width: 600px; /* center form with limited width */
+}
+
+/* Form styling */
+form.border {
+  background-color: #f8f9fa; /* light gray */
+  border-radius: 0.5rem;      /* rounded corners */
+  padding: 2rem;              /* internal spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/* Input fields */
+form .form-control {
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #0d6efd; /* Bootstrap primary color on focus */
+  box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Submit button */
+form .btn-primary {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+form .btn-primary:hover {
+  background-color: #0b5ed7; /* darker blue */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Product Card Styling */
+.product-card {
+  background: #0c2545; /* same dark blue */
+  border-radius: 10px;
+  max-width: 550px;
+}
+
+/* Yellow highlight labels */
+.form-label {
+  font-weight: 600;
+}
+
+/* Inputs styling */
+.custom-input {
+  background-color: #102c59;
+  border: 1px solid #264a7d;
+  color: #fff;
+}
+
+.custom-input::placeholder {
+  color: #b9c4d3;
+}
+
+.custom-input:focus {
+  background-color: #102c59;
+  border: 1px solid #e0c12b;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(224, 193, 43, 0.25);
+}
+
+/* Checkbox */
+.form-check-input:checked {
+  background-color: #e0c12b !important;
+  border-color: #e0c12b !important;
+}

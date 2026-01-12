@@ -1,0 +1,166 @@
+/* ===========================
+   BASE / LAYOUT
+=========================== */
+
+.about-page {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-page ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-page ul li::before {
+  content: "• ";
+  color: #fff;
+  font-weight: bold;
+}
+
+.about-page ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.about-page p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.intro-img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
+.feature_img {
+  width: 100%;
+  border-radius: 8px;
+  /* max-width: 260px; */
+  object-fit: contain;
+}
+
+.feature-box,
+.feature-box2 {
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.feature-box {
+  background: #e0c12b;
+}
+
+.feature-box2 {
+  background: #0c2545;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .feature-box,
+  .feature-box2 {
+    flex-direction: column;
+    text-align: start;
+  }
+  
+  .feature_img {
+    max-width: 300px;
+  }
+}
+
+.tech_stack {
+  background: #0c2545;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.scroller {
+  padding: 10px;
+  background: #0c2545;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 80px;
+}
+
+.track {
+  align-items: center;
+  position: absolute;
+  white-space: nowrap;
+  display: flex;
+  gap: 100px;
+  animation: slide 12s linear infinite;
+}
+
+.track1 { left: 0%; }
+.track2 { left: 100%; }
+
+.track i {
+  font-size: 60px;
+  color: #e0c12b;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .track i {
+    font-size: 50px;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .track i {
+    font-size: 40px;
+    gap: 40px;
+  }
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+.database_div {
+  background: #0c2545;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+  .section-subtitle {
+    font-size: 20px;
+  }
+  .about-page p,
+  .about-page ul li {
+    font-size: 15px;
+  }
+}
