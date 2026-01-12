@@ -12,7 +12,7 @@ function Fetch() {
   const fileInputRef = useRef(null);
 
   const fetchProducts = () => {
-    axios.get("https://zucom.free.nf/api/fetch.php")
+    axios.get("/api/fetch")
       .then((response) => {
         if (Array.isArray(response.data)) {
           setProducts(response.data);
