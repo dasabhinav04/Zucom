@@ -21,7 +21,7 @@ const Footer = () => {
           <ul className="footer-links">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Project</a></li>
-            <li><a href="#">My Portfolio</a></li>
+            <li><a href="http://abhinav.free.nf/">My Portfolio</a></li>
           </ul>
         </div>
 

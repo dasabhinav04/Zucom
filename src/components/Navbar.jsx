@@ -44,10 +44,8 @@ const Navbar = () => {
 
         <ul className="mobile-links mt-4">
           <li><a className="active" href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">GALLERY</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><Link to="/" className="nav-link">HOME</Link></li>
+          <li><Link to="about" className="nav-link">ABOUT</Link></li>
         </ul>
       </div>
     </>
