@@ -26,7 +26,7 @@ const Search = () => {
     setError(null);
 
     axios
-      .get(`https://zucom.free.nf/api/search.php?search=${searchData}`)
+      .get(`/api/search.php?search=${searchData}`)
       .then(response => {
         if (response.data.error) {
           setError('Error fetching data');

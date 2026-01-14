@@ -25,7 +25,7 @@ function AddProducts({ fetchProducts }) {
     if (image) formData.append('image', image);
 
     axios
-      .post('https://zucom.free.nf/api/add_product.php', formData)
+      .post('/api/add_product.php', formData)
       .then((response) => {
         if (response.data.status === 'success') {
           alert('Product added successfully');

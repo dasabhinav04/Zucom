@@ -12,7 +12,7 @@ function Fetch() {
   const fileInputRef = useRef(null);
 
   const fetchProducts = () => {
-    axios.get("https://zucom.free.nf/api/fetch.php")
+    axios.get("/api/fetch.php")
       .then((response) => {
         if (Array.isArray(response.data)) {
           setProducts(response.data);
@@ -29,7 +29,7 @@ function Fetch() {
     if (!window.confirm("Are you sure you want to delete this product?")) return;
 
     axios.post(
-      "https://zucom.free.nf/api/delete.php",
+      "/api/delete.php",
       { id },
       { headers: { "Content-Type": "application/json" } }
     )
@@ -76,7 +76,7 @@ function Fetch() {
     formData.append("price", newprice);
     if (newimg) formData.append("img", newimg);
 
-    axios.post("https://zucom.free.nf/api/edit.php", formData, {
+    axios.post("/api/edit.php", formData, {
       headers: { "Content-Type": "multipart/form-data" }
     })
     .then((response) => {
